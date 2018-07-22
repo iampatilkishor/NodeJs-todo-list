@@ -4,6 +4,7 @@
   "description": "A to do list app",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kishor Patil <kishor.patil@clariontechnologies.co.in>",

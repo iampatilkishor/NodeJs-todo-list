@@ -2,12 +2,13 @@ var express = require('express');
 const PORT = process.env.PORT || 5000
 const path = require('path');
 
-// var todoController = require('./controller/todoController');
+var todoController = require('./controller/todoController');
 
 
 
 const app = express()
   app.use(express.static(path.join(__dirname, 'public')))
+  todoController(app);
   app.get('/', (req, res) => res.sendFile('public/index.html'))
   app.listen(PORT)
 

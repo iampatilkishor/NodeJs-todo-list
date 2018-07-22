@@ -1,6 +1,6 @@
 var express = require('express');
-var cors = require('cors');
 const PORT = process.env.PORT || 5000
+const path = require('path');
 
 // var todoController = require('./controller/todoController');
 

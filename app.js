@@ -3,7 +3,6 @@ var cors = require('cors')
 
 var todoController = require('./controller/todoController');
 var app = express();
-app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')))
 todoController(app);
 app.get('/', function(req, res){

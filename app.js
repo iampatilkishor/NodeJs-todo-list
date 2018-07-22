@@ -11,14 +11,14 @@ app.use(cors())
 // app.set('view engine','ejs');
 
 // static files
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname, 'public')))
 
 todoController(app);
 
 app.get('*', function(req, res){
     // get data from database and sent ti view
 
-    res.sendfile('./public/index.html'); 
+    res.sendFile('public/index.html'); 
         // res.status(200).sendFile(path.join(__dirname + '/public/todo/index.html')); 
 });
 

@@ -18,7 +18,7 @@ todoController(app);
 app.get('*', function(req, res){
     // get data from database and sent ti view
 
-    res.sendfile('./public'); 
+    res.sendfile('./public/index.html'); 
         // res.status(200).sendFile(path.join(__dirname + '/public/todo/index.html')); 
 });
 

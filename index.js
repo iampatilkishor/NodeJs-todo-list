@@ -8,9 +8,8 @@ var todoController = require('./controller/todoController');
 
 todoController(express()
   .use(express.static(path.join(__dirname, 'public')))
-  
   .get('/', (req, res) => res.sendFile('public/index.html'))
-  .listen(PORT));
+  .listen(PORT))
 
 
 

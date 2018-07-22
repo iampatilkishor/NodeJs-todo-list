@@ -18,11 +18,11 @@ todoController(app);
 app.get('*', function(req, res){
     // get data from database and sent ti view
 
-    res.sendfile('./public/index.html'); 
+    res.sendfile('./public'); 
         // res.status(200).sendFile(path.join(__dirname + '/public/todo/index.html')); 
 });
 
 
 //  listen to port
-app.listen(3000);
+app.listen(8080);
 console.log('You are listening to port 3000');
